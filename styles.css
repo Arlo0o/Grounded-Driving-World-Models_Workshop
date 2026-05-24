@@ -585,7 +585,7 @@ button:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
-  background: #0e171d;
+  background: #ffffff;
 }
 
 .multi-modal-media figure {
@@ -595,10 +595,14 @@ button:focus-visible {
 
 .multi-modal-media figcaption {
   padding: 10px 14px;
-  color: #dcebe8;
-  background: #0e171d;
+  color: var(--muted);
+  background: #ffffff;
   font-size: 0.88rem;
   font-weight: 750;
+}
+
+.multi-modal-media video {
+  background: #ffffff;
 }
 
 .multimodal-copy {

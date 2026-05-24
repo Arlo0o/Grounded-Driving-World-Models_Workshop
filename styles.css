@@ -130,7 +130,7 @@ button:focus-visible {
   padding: 112px 28px 72px;
 }
 
-.hero-video,
+.hero-visual,
 .hero-shade {
   position: absolute;
   inset: 0;
@@ -138,13 +138,16 @@ button:focus-visible {
   height: 100%;
 }
 
-.hero-video {
+.hero-visual {
   object-fit: cover;
-  opacity: 0.88;
+  object-position: center;
+  opacity: 0.68;
+  filter: saturate(0.86) contrast(0.94);
+  transform: scale(1.14);
 }
 
 .hero-shade {
-  background: rgba(8, 15, 21, 0.62);
+  background: rgba(8, 15, 21, 0.76);
 }
 
 .hero-content {
@@ -433,10 +436,10 @@ button:focus-visible {
 }
 
 .resource-card {
-  min-height: 252px;
+  min-height: 390px;
   display: flex;
   flex-direction: column;
-  padding: 22px;
+  padding: 18px;
 }
 
 .resource-card.accent-teal {
@@ -445,6 +448,43 @@ button:focus-visible {
 
 .resource-card.accent-coral {
   border-top: 5px solid var(--coral);
+}
+
+.resource-visual {
+  height: 132px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border: 1px solid #d9e3e5;
+  border-radius: 6px;
+  background: #edf3f3;
+}
+
+.resource-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resource-visual.contain {
+  background: #ffffff;
+}
+
+.resource-visual.contain img {
+  object-fit: contain;
+  padding: 10px;
+}
+
+.resource-visual.symbol {
+  display: grid;
+  place-items: center;
+  color: #bfe7e2;
+  background: var(--night);
+}
+
+.resource-visual.symbol span {
+  font-size: 2.35rem;
+  font-weight: 900;
+  letter-spacing: 0;
 }
 
 .resource-links {
@@ -485,7 +525,7 @@ button:focus-visible {
 
 .media-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -493,8 +533,8 @@ button:focus-visible {
   overflow: hidden;
 }
 
-.media-tile.large {
-  grid-column: span 2;
+.media-tile.table-tile {
+  grid-column: 1 / -1;
 }
 
 .media-tile img,
@@ -503,6 +543,13 @@ button:focus-visible {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   background: #e9eeee;
+}
+
+.media-tile.table-tile img {
+  aspect-ratio: auto;
+  padding: 14px;
+  object-fit: contain;
+  background: #ffffff;
 }
 
 .media-tile div {
@@ -702,7 +749,7 @@ button:focus-visible {
     font-size: 1.82rem;
   }
 
-  .media-tile.large {
+  .media-tile.table-tile {
     grid-column: span 1;
   }
 

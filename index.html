@@ -29,9 +29,7 @@
 
     <main id="top">
       <section class="hero-section" aria-label="Workshop introduction">
-        <video class="hero-video" autoplay muted loop playsinline poster="assets/challenger/images/f1_sm.jpg">
-          <source src="assets/challenger/videos/sadv_01.mp4" type="video/mp4">
-        </video>
+        <img class="hero-visual" src="assets/uniscenev2/hero_uniscene.png" alt="UniSceneV2 spatial expansion and temporal forecasting visualization" fetchpriority="high">
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
           <p class="eyebrow">CoRL 2026 Half-Day Workshop</p>
@@ -205,6 +203,9 @@
 
         <div class="resource-router">
           <article class="resource-card accent-teal">
+            <div class="resource-visual contain">
+              <img src="assets/uniscenev2/data_compare.png" alt="Nuplan-Occ dataset comparison graphic">
+            </div>
             <div class="resource-label">Dataset and checkpoints</div>
             <h3>Nuplan-Occ and UniSceneV2 pretrained models</h3>
             <p>Large-scale semantic occupancy data with released checkpoints for occupancy, video, and LiDAR generation.</p>
@@ -215,6 +216,9 @@
           </article>
 
           <article class="resource-card">
+            <div class="resource-visual">
+              <img src="assets/uniscenev2/model_occupancy.png" alt="UniSceneV2 occupancy generation module">
+            </div>
             <div class="resource-label">World model representation</div>
             <h3>4D occupancy generation</h3>
             <p>Use this path for spatial expansion, temporal forecasting, and occupancy-centric scene representations.</p>
@@ -225,6 +229,9 @@
           </article>
 
           <article class="resource-card">
+            <div class="resource-visual">
+              <img src="assets/uniscenev2/model_video.png" alt="UniSceneV2 multi-view video generation module">
+            </div>
             <div class="resource-label">Sensor-realistic simulation</div>
             <h3>Multi-view video and LiDAR generation</h3>
             <p>Use occupancy-derived conditions for temporally coherent surround-view video and sensor-specific LiDAR outputs.</p>
@@ -235,6 +242,9 @@
           </article>
 
           <article class="resource-card accent-coral">
+            <div class="resource-visual">
+              <img src="assets/challenger/images/f1_sm.jpg" alt="Challenger adversarial driving scene visualization">
+            </div>
             <div class="resource-label">Safety-critical scenarios</div>
             <h3>Challenger and Adv-nuSc</h3>
             <p>Generate physically plausible adversarial maneuvers and evaluate end-to-end driving models under stress.</p>
@@ -245,6 +255,9 @@
           </article>
 
           <article class="resource-card">
+            <div class="resource-visual contain">
+              <img src="assets/challenger/images/vd_q_fig.jpg" alt="Challenger downstream evaluation overview">
+            </div>
             <div class="resource-label">Downstream evaluation</div>
             <h3>Perception and planning baselines</h3>
             <p>Connect generated data to semantic occupancy prediction and autonomous driving evaluation pipelines.</p>
@@ -255,6 +268,9 @@
           </article>
 
           <article class="resource-card">
+            <div class="resource-visual symbol" aria-hidden="true">
+              <span>CFP</span>
+            </div>
             <div class="resource-label">Workshop submissions</div>
             <h3>Suggested starting points</h3>
             <p>Submit methods, datasets, benchmarks, negative results, position papers, or resource reports that tie world models to decisions.</p>
@@ -272,20 +288,11 @@
           <h2>Grounded generation spans structure, sensors, and safety-critical interaction.</h2>
         </div>
         <div class="media-grid">
-          <article class="media-tile large">
+          <article class="media-tile table-tile">
             <img src="assets/uniscenev2/data_compare.png" alt="Nuplan-Occ dataset comparison showing scale and sensor modalities">
             <div>
               <h3>Large-scale occupancy data</h3>
               <p>Nuplan-Occ supports 4D scene generation, semantic occupancy prediction, and multi-modal simulation.</p>
-            </div>
-          </article>
-          <article class="media-tile">
-            <video autoplay muted loop playsinline controls>
-              <source src="assets/challenger/videos/sadv_01.mp4" type="video/mp4">
-            </video>
-            <div>
-              <h3>Adversarial interaction</h3>
-              <p>Scenario generation can expose rare failure modes in end-to-end driving systems.</p>
             </div>
           </article>
           <article class="media-tile">
@@ -296,12 +303,17 @@
             </div>
           </article>
           <article class="media-tile">
-            <video autoplay muted loop playsinline controls>
-              <source src="assets/challenger/videos/madv_01.mp4" type="video/mp4">
-            </video>
+            <img src="assets/uniscenev2/model_lidar.png" alt="UniSceneV2 sensor-specific LiDAR generation architecture">
             <div>
-              <h3>Multi-agent stress testing</h3>
-              <p>Workshop scenarios should be challenging, plausible, and still solvable by a safe planner.</p>
+              <h3>Sensor-specific LiDAR generation</h3>
+              <p>LiDAR outputs make generated scenes testable against geometry-aware perception stacks.</p>
+            </div>
+          </article>
+          <article class="media-tile">
+            <img src="assets/challenger/images/f2_sm.jpg" alt="Challenger physically plausible adversarial interaction examples">
+            <div>
+              <h3>Adversarial interaction</h3>
+              <p>Stress-test scenarios should be rare, plausible, and still meaningful for safe decision making.</p>
             </div>
           </article>
         </div>

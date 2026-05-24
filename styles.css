@@ -652,6 +652,69 @@ button:focus-visible {
   color: #c8d4d4;
 }
 
+.citation-section {
+  max-width: none;
+  background: var(--soft);
+}
+
+.citation-section > * {
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.citation-list {
+  display: grid;
+  gap: 16px;
+}
+
+.citation-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.citation-meta span {
+  display: block;
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.citation-meta h3 {
+  margin: 10px 0 8px;
+  font-size: 1.08rem;
+  line-height: 1.28;
+}
+
+.citation-meta p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.citation-card pre {
+  min-width: 0;
+  margin: 0;
+  padding: 15px;
+  overflow-x: auto;
+  border-radius: 6px;
+  color: #dcebe8;
+  background: #0e171d;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.citation-card code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;
@@ -761,6 +824,10 @@ button:focus-visible {
   .organizer-strip {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .citation-card {
+    grid-template-columns: 1fr;
   }
 
   .artifact-panel {

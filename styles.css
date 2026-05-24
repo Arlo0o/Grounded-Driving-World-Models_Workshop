@@ -141,13 +141,12 @@ button:focus-visible {
 .hero-visual {
   object-fit: cover;
   object-position: center;
-  opacity: 0.68;
-  filter: saturate(0.86) contrast(0.94);
-  transform: scale(1.14);
+  opacity: 0.62;
+  filter: saturate(0.88) contrast(0.95) brightness(0.92);
 }
 
 .hero-shade {
-  background: rgba(8, 15, 21, 0.76);
+  background: rgba(8, 15, 21, 0.7);
 }
 
 .hero-content {
@@ -347,19 +346,29 @@ button:focus-visible {
   max-width: 840px;
 }
 
-.wide-figure {
+.anchor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
   margin: 36px auto 0;
 }
 
-.wide-figure img {
-  width: 100%;
+.anchor-figure {
+  margin: 0;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
+  background: #ffffff;
+}
+
+.anchor-figure img {
+  width: 100%;
+  height: auto;
   background: #fff;
 }
 
-.wide-figure figcaption {
-  margin-top: 10px;
+.anchor-figure figcaption {
+  padding: 14px 16px 16px;
   color: var(--muted);
   font-size: 0.94rem;
 }
@@ -451,7 +460,7 @@ button:focus-visible {
 }
 
 .resource-visual {
-  height: 132px;
+  height: 148px;
   margin-bottom: 18px;
   overflow: hidden;
   border: 1px solid #d9e3e5;
@@ -472,6 +481,14 @@ button:focus-visible {
 .resource-visual.contain img {
   object-fit: contain;
   padding: 10px;
+}
+
+.resource-visual.diagram img {
+  padding: 8px;
+}
+
+.resource-visual.diagram {
+  height: 184px;
 }
 
 .resource-visual.symbol {
@@ -525,7 +542,7 @@ button:focus-visible {
 
 .media-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   align-items: start;
 }
@@ -536,15 +553,19 @@ button:focus-visible {
 
 .media-tile.table-tile,
 .media-tile.large {
-  grid-column: span 1;
+  grid-column: 1 / -1;
 }
 
 .media-tile img,
 .media-tile video {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: contain;
   background: #e9eeee;
+}
+
+.media-tile video {
+  background: #0e171d;
 }
 
 .media-tile.table-tile img {
@@ -749,7 +770,12 @@ button:focus-visible {
   }
 
   .resource-router,
-  .people-grid {
+  .people-grid,
+  .anchor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .media-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -796,6 +822,7 @@ button:focus-visible {
 
   .section-grid,
   .pillars,
+  .anchor-grid,
   .resource-router,
   .people-grid,
   .dates-grid,

@@ -29,7 +29,9 @@
 
     <main id="top">
       <section class="hero-section" aria-label="Workshop introduction">
-        <img class="hero-visual" src="assets/uniscenev2/hero_uniscene.png" alt="UniSceneV2 spatial expansion and temporal forecasting visualization" fetchpriority="high">
+        <video class="hero-visual" autoplay muted loop playsinline preload="metadata" poster="assets/uniscenev2/hero_uniscene.png" aria-hidden="true">
+          <source src="assets/uniscenev2/videos/demo_nuplan1.mp4" type="video/mp4">
+        </video>
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
           <p class="eyebrow">CoRL 2026 Half-Day Workshop</p>
@@ -99,12 +101,20 @@
             occupancy-centric 4D world modeling and photorealistic adversarial scenario generation.
           </p>
         </div>
-        <figure class="wide-figure">
-          <img src="assets/uniscenev2/overall.png" alt="UniSceneV2 occupancy-centric pipeline for dynamic 4D occupancy, multi-view video, and LiDAR generation">
-          <figcaption>
-            Occupancy-centric world modeling connects 4D scene structure to camera and LiDAR observations.
-          </figcaption>
-        </figure>
+        <div class="anchor-grid">
+          <figure class="anchor-figure">
+            <img src="assets/uniscenev2/overall.png" alt="UniSceneV2 occupancy-centric pipeline for dynamic 4D occupancy, multi-view video, and LiDAR generation">
+            <figcaption>
+              UniSceneV2 connects 4D semantic occupancy to multi-view video, LiDAR, downstream perception, and planning evaluation.
+            </figcaption>
+          </figure>
+          <figure class="anchor-figure">
+            <img src="assets/challenger/images/f1_sm.jpg" alt="Challenger adversarial driving video and trajectory stress-testing visualization">
+            <figcaption>
+              Challenger turns physically plausible adversarial maneuvers into photorealistic driving videos for safety testing.
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="section" id="challenges">
@@ -216,7 +226,7 @@
           </article>
 
           <article class="resource-card">
-            <div class="resource-visual">
+            <div class="resource-visual contain diagram">
               <img src="assets/uniscenev2/model_occupancy.png" alt="UniSceneV2 occupancy generation module">
             </div>
             <div class="resource-label">World model representation</div>
@@ -229,7 +239,7 @@
           </article>
 
           <article class="resource-card">
-            <div class="resource-visual">
+            <div class="resource-visual contain diagram">
               <img src="assets/uniscenev2/model_video.png" alt="UniSceneV2 multi-view video generation module">
             </div>
             <div class="resource-label">Sensor-realistic simulation</div>
@@ -296,14 +306,18 @@
             </div>
           </article>
           <article class="media-tile">
-            <img src="assets/uniscenev2/model_video.png" alt="UniSceneV2 multi-view video generation architecture">
+            <video autoplay muted loop playsinline controls preload="metadata" poster="assets/uniscenev2/model_video.png">
+              <source src="assets/uniscenev2/videos/demo_lx1.mp4" type="video/mp4">
+            </video>
             <div>
               <h3>Multi-view video generation</h3>
               <p>Sensor outputs should preserve geometry and temporal coherence across views.</p>
             </div>
           </article>
           <article class="media-tile">
-            <img src="assets/uniscenev2/model_lidar.png" alt="UniSceneV2 sensor-specific LiDAR generation architecture">
+            <video autoplay muted loop playsinline controls preload="metadata" poster="assets/uniscenev2/model_lidar.png">
+              <source src="assets/uniscenev2/videos/demo_nuplan1.mp4" type="video/mp4">
+            </video>
             <div>
               <h3>Sensor-specific LiDAR generation</h3>
               <p>LiDAR outputs make generated scenes testable against geometry-aware perception stacks.</p>
@@ -316,15 +330,6 @@
             <div>
               <h3>Adversarial interaction</h3>
               <p>Scenario generation can expose rare failure modes in vision-based end-to-end driving systems.</p>
-            </div>
-          </article>
-          <article class="media-tile">
-            <video autoplay muted loop playsinline controls>
-              <source src="assets/challenger/videos/madv_01.mp4" type="video/mp4">
-            </video>
-            <div>
-              <h3>Multi-agent stress testing</h3>
-              <p>Stress-test scenarios should be rare, plausible, and still meaningful for safe decision making.</p>
             </div>
           </article>
         </div>

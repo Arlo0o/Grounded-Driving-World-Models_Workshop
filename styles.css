@@ -552,7 +552,9 @@ button:focus-visible {
 }
 
 .media-tile.table-tile,
-.media-tile.large {
+.media-tile.large,
+.media-tile.multimodal-tile,
+.media-tile.challenger-tile {
   grid-column: 1 / -1;
 }
 
@@ -575,8 +577,85 @@ button:focus-visible {
   background: #ffffff;
 }
 
-.media-tile div {
+.media-copy {
   padding: 18px;
+}
+
+.multi-modal-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  background: #0e171d;
+}
+
+.multi-modal-media figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.multi-modal-media figcaption {
+  padding: 10px 14px;
+  color: #dcebe8;
+  background: #0e171d;
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
+.multimodal-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.modality-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.modality-list li {
+  padding-left: 12px;
+  border-left: 4px solid var(--teal);
+}
+
+.modality-list li:nth-child(2) {
+  border-left-color: var(--amber);
+}
+
+.modality-list li:nth-child(3) {
+  border-left-color: var(--coral);
+}
+
+.modality-list strong {
+  display: block;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.modality-list span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.challenger-tile {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+}
+
+.challenger-tile video {
+  aspect-ratio: 3296 / 896;
+}
+
+.challenger-tile .media-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .topics {
@@ -779,6 +858,15 @@ button:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .multimodal-copy,
+  .challenger-tile {
+    grid-template-columns: 1fr;
+  }
+
+  .modality-list {
+    grid-template-columns: 1fr;
+  }
+
   .dates-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -835,6 +923,10 @@ button:focus-visible {
   .section-heading h2,
   .artifact-panel h2 {
     font-size: 1.82rem;
+  }
+
+  .multi-modal-media {
+    grid-template-columns: 1fr;
   }
 
   .media-tile.table-tile {

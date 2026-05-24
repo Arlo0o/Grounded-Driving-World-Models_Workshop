@@ -300,34 +300,52 @@
         <div class="media-grid">
           <article class="media-tile table-tile">
             <img src="assets/uniscenev2/data_compare.png" alt="Nuplan-Occ dataset comparison showing scale and sensor modalities">
-            <div>
+            <div class="media-copy">
               <h3>Large-scale occupancy data</h3>
               <p>Nuplan-Occ supports 4D scene generation, semantic occupancy prediction, and multi-modal simulation.</p>
             </div>
           </article>
-          <article class="media-tile">
-            <video autoplay muted loop playsinline controls preload="metadata" poster="assets/uniscenev2/model_video.png">
-              <source src="assets/uniscenev2/videos/demo_lx1.mp4" type="video/mp4">
-            </video>
-            <div>
-              <h3>Multi-view video generation</h3>
-              <p>Sensor outputs should preserve geometry and temporal coherence across views.</p>
+          <article class="media-tile multimodal-tile">
+            <div class="multi-modal-media">
+              <figure>
+                <video autoplay muted loop playsinline controls preload="metadata" poster="assets/uniscenev2/model_video.png">
+                  <source src="assets/uniscenev2/videos/demo_lx1.mp4" type="video/mp4">
+                </video>
+                <figcaption>Cross-dataset sensor-rig example</figcaption>
+              </figure>
+              <figure>
+                <video autoplay muted loop playsinline controls preload="metadata" poster="assets/uniscenev2/model_lidar.png">
+                  <source src="assets/uniscenev2/videos/demo_nuplan1.mp4" type="video/mp4">
+                </video>
+                <figcaption>NuPlan-Occ example</figcaption>
+              </figure>
+            </div>
+            <div class="media-copy multimodal-copy">
+              <div>
+                <h3>Multi-modal simulation across datasets</h3>
+                <p>UniSceneV2 treats occupancy as the shared world representation, then renders sensor-level outputs for different datasets and sensor rigs.</p>
+              </div>
+              <ul class="modality-list">
+                <li>
+                  <strong>4D occupancy generation</strong>
+                  <span>Spatial expansion and temporal forecasting of semantic driving scenes.</span>
+                </li>
+                <li>
+                  <strong>Multi-view video generation</strong>
+                  <span>Surround-view visual synthesis conditioned on generated scene structure.</span>
+                </li>
+                <li>
+                  <strong>Sensor-specific LiDAR generation</strong>
+                  <span>LiDAR point clouds aligned with occupancy and camera-space observations.</span>
+                </li>
+              </ul>
             </div>
           </article>
-          <article class="media-tile">
-            <video autoplay muted loop playsinline controls preload="metadata" poster="assets/uniscenev2/model_lidar.png">
-              <source src="assets/uniscenev2/videos/demo_nuplan1.mp4" type="video/mp4">
-            </video>
-            <div>
-              <h3>Sensor-specific LiDAR generation</h3>
-              <p>LiDAR outputs make generated scenes testable against geometry-aware perception stacks.</p>
-            </div>
-          </article>
-          <article class="media-tile">
+          <article class="media-tile challenger-tile">
             <video autoplay muted loop playsinline controls>
               <source src="assets/challenger/videos/sadv_01.mp4" type="video/mp4">
             </video>
-            <div>
+            <div class="media-copy">
               <h3>Adversarial interaction</h3>
               <p>Scenario generation can expose rare failure modes in vision-based end-to-end driving systems.</p>
             </div>

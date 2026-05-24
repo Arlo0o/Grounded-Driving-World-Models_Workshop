@@ -525,23 +525,25 @@ button:focus-visible {
 
 .media-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 18px;
+  align-items: start;
 }
 
 .media-tile {
   overflow: hidden;
 }
 
-.media-tile.table-tile {
-  grid-column: 1 / -1;
+.media-tile.table-tile,
+.media-tile.large {
+  grid-column: span 1;
 }
 
 .media-tile img,
 .media-tile video {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   background: #e9eeee;
 }
 
@@ -748,10 +750,6 @@ button:focus-visible {
 
   .resource-router,
   .people-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .media-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 

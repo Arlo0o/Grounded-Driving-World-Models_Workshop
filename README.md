@@ -1,13 +1,13 @@
-# Grounded Driving World Models Workshop Website
+# Grounded 4D Multimodal World Models Workshop Website
 
 Static website for the CoRL 2026 workshop proposal:
 
-**Grounded World Models for Real-World Autonomous Driving Decision Making**
+**Grounded 4D Multimodal World Models for Autonomous Driving Decision Making**
 
 ## Local Preview
 
 ```bash
-cd /Users/liboom/Desktop/GroundedDrivingWorldModels
+cd /Users/liboom/Library/CloudStorage/OneDrive-个人/paper/8-uniscene-v2-OK/AD_CORL_Proposal/GroundedDrivingWorldModels
 python3 -m http.server 8060
 ```
 

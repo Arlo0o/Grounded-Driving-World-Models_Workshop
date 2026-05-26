@@ -571,6 +571,7 @@ button:focus-visible {
 
 .media-tile.table-tile img {
   aspect-ratio: auto;
+  height: clamp(220px, 28vw, 340px);
   padding: 14px;
   object-fit: contain;
   background: #ffffff;
@@ -730,6 +731,7 @@ button:focus-visible {
 
 .speaker-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
 }
 
 .organizer-grid {

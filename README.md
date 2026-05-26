@@ -37,8 +37,6 @@ assets/
 
 ## Before Public Release
 
-- Add remaining organizers when finalized.
-- Replace remaining speaker placeholders with invited speakers and status.
 - Update contact email if a shared workshop alias is created.
 - Fill workshop paper submission, notification, and camera-ready dates.
 - Update final GitHub Pages URL after deployment.

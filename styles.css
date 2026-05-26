@@ -277,8 +277,7 @@ button:focus-visible {
 .challenge-item,
 .resource-card,
 .media-tile,
-.people-grid article,
-.organizer-strip,
+.person-card,
 .dates-grid div {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -291,8 +290,8 @@ button:focus-visible {
 
 .pillar-index,
 .resource-label,
-.people-grid span,
-.organizer-strip span,
+.people-subhead span,
+.person-card span,
 .dates-grid span {
   display: block;
   color: var(--teal);
@@ -305,7 +304,7 @@ button:focus-visible {
 .challenge-item h3,
 .resource-card h3,
 .media-tile h3,
-.people-grid h3,
+.person-card h3,
 .schedule h3,
 .topics h3 {
   margin: 10px 0 8px;
@@ -317,9 +316,9 @@ button:focus-visible {
 .challenge-item p,
 .resource-card p,
 .media-tile p,
-.people-grid p,
-.schedule p,
-.organizer-strip p {
+.person-card p,
+.people-subhead p,
+.schedule p {
   margin: 0;
   color: var(--muted);
 }
@@ -707,54 +706,84 @@ button:focus-visible {
   font-size: 1.22rem;
 }
 
-.people-grid {
+.people-group + .people-group {
+  margin-top: 42px;
+}
+
+.people-subhead {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+.people-subhead p {
+  max-width: 680px;
+  text-align: right;
+}
+
+.person-grid {
   display: grid;
+  gap: 18px;
+}
+
+.speaker-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
 }
 
-.people-grid article {
-  padding: 20px;
-  min-height: 180px;
+.organizer-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.people-grid a {
+.person-card {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.person-photo {
+  display: block;
+  aspect-ratio: 1 / 1;
+  background: #e8eeee;
+  overflow: hidden;
+}
+
+.person-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 180ms ease;
+}
+
+.person-card:hover .person-photo img {
+  transform: scale(1.03);
+}
+
+.person-initials {
+  display: grid;
+  place-items: center;
+  color: #0f2c33;
+  font-size: 2rem;
+  font-weight: 850;
+  background: linear-gradient(135deg, #d7f0ed, #f6f0e5);
+}
+
+.person-copy {
+  padding: 18px;
+}
+
+.person-copy h3 a {
+  color: var(--ink);
+}
+
+.person-copy h3 a:hover,
+.person-email:hover {
+  color: var(--teal-dark);
+}
+
+.person-email {
   display: inline-block;
   margin-top: 12px;
-  color: var(--teal-dark);
-  font-weight: 800;
-  overflow-wrap: anywhere;
-}
-
-.organizer-strip {
-  margin-top: 18px;
-  padding: 18px 20px;
-}
-
-.organizer-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 14px;
-}
-
-.organizer-list article {
-  min-width: 0;
-}
-
-.organizer-list strong {
-  display: block;
-  margin-bottom: 6px;
-  color: var(--ink);
-  font-size: 1.04rem;
-}
-
-.organizer-strip p {
-  color: var(--ink);
-  font-weight: 700;
-}
-
-.organizer-strip a {
   color: var(--teal-dark);
   font-weight: 800;
   overflow-wrap: anywhere;
@@ -875,7 +904,8 @@ button:focus-visible {
   }
 
   .resource-router,
-  .people-grid,
+  .speaker-grid,
+  .organizer-grid,
   .anchor-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -938,12 +968,21 @@ button:focus-visible {
   .pillars,
   .anchor-grid,
   .resource-router,
-  .people-grid,
-  .organizer-list,
+  .speaker-grid,
+  .organizer-grid,
   .dates-grid,
   .media-grid,
   .challenge-list {
     grid-template-columns: 1fr;
+  }
+
+  .people-subhead {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .people-subhead p {
+    text-align: left;
   }
 
   .section h2,
@@ -963,11 +1002,6 @@ button:focus-visible {
   .schedule-row {
     grid-template-columns: 1fr;
     gap: 8px;
-  }
-
-  .organizer-strip {
-    align-items: flex-start;
-    flex-direction: column;
   }
 
   .citation-card {

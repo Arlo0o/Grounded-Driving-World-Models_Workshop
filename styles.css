@@ -725,7 +725,7 @@ button:focus-visible {
 
 .person-grid {
   display: grid;
-  gap: 18px;
+  gap: 24px;
 }
 
 .speaker-grid {
@@ -743,7 +743,9 @@ button:focus-visible {
 
 .person-photo {
   display: block;
+  margin: 16px 16px 0;
   aspect-ratio: 1 / 1;
+  border-radius: 6px;
   background: #e8eeee;
   overflow: hidden;
 }
@@ -769,7 +771,7 @@ button:focus-visible {
 }
 
 .person-copy {
-  padding: 18px;
+  padding: 16px 16px 18px;
 }
 
 .person-copy h3 a {
@@ -783,9 +785,11 @@ button:focus-visible {
 
 .person-email {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 10px;
   color: var(--teal-dark);
-  font-weight: 800;
+  font-size: 0.82rem;
+  font-weight: 650;
+  line-height: 1.25;
   overflow-wrap: anywhere;
 }
 

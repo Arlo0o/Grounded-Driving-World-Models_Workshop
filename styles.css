@@ -743,6 +743,10 @@ button:focus-visible {
   overflow: hidden;
 }
 
+.person-card-placeholder {
+  border-style: dashed;
+}
+
 .person-photo {
   display: block;
   margin: 16px 16px 0;
@@ -782,6 +786,17 @@ button:focus-visible {
 
 .person-copy h3 a:hover,
 .person-email:hover {
+  color: var(--teal-dark);
+}
+
+.person-affiliation-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(18, 104, 103, 0.35);
+  text-underline-offset: 2px;
+}
+
+.person-affiliation-link:hover {
   color: var(--teal-dark);
 }
 

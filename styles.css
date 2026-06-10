@@ -789,17 +789,6 @@ button:focus-visible {
   color: var(--teal-dark);
 }
 
-.person-affiliation-link {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: rgba(18, 104, 103, 0.35);
-  text-underline-offset: 2px;
-}
-
-.person-affiliation-link:hover {
-  color: var(--teal-dark);
-}
-
 .person-email {
   display: inline-block;
   margin-top: 10px;

@@ -743,10 +743,6 @@ button:focus-visible {
   overflow: hidden;
 }
 
-.person-card-placeholder {
-  border-style: dashed;
-}
-
 .person-photo {
   display: block;
   margin: 16px 16px 0;
@@ -765,15 +761,6 @@ button:focus-visible {
 
 .person-card:hover .person-photo img {
   transform: scale(1.03);
-}
-
-.person-initials {
-  display: grid;
-  place-items: center;
-  color: #0f2c33;
-  font-size: 2rem;
-  font-weight: 850;
-  background: linear-gradient(135deg, #d7f0ed, #f6f0e5);
 }
 
 .person-copy {

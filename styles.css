@@ -204,6 +204,14 @@ button:focus-visible {
   margin-top: 32px;
 }
 
+.hero-deadline {
+  max-width: 760px;
+  margin: 18px 0 0;
+  color: #d8e9e8;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -232,6 +240,17 @@ button:focus-visible {
 
 .button.secondary:hover {
   background: rgba(255, 255, 255, 0.16);
+}
+
+.button.outline {
+  color: var(--teal-dark);
+  border-color: #9ebbbc;
+  background: #ffffff;
+}
+
+.button.outline:hover {
+  border-color: var(--teal);
+  background: #edf7f5;
 }
 
 .section {
@@ -662,6 +681,115 @@ button:focus-visible {
   justify-content: center;
 }
 
+.contribution-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbfa 100%);
+}
+
+.submission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.submission-alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 34px;
+  padding: 22px 24px;
+  border-radius: 8px;
+  color: #eff8f7;
+  background: var(--teal-dark);
+}
+
+.submission-alert span,
+.submission-alert strong,
+.submission-alert small {
+  display: block;
+}
+
+.submission-alert span {
+  color: #98d8d1;
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.submission-alert strong {
+  margin-top: 4px;
+  font-size: 1.28rem;
+}
+
+.submission-alert small {
+  margin-top: 3px;
+  color: #c9dedc;
+}
+
+.submission-grid article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.submission-grid span {
+  display: block;
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.submission-grid h3 {
+  margin: 10px 0 8px;
+  font-size: 1.08rem;
+  line-height: 1.28;
+}
+
+.submission-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.inline-link {
+  color: var(--teal-dark);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.policy-grid div {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.policy-grid strong {
+  color: var(--teal-dark);
+}
+
+.policy-grid p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.cfp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
 .topics {
   margin-top: 36px;
   padding: 26px;
@@ -692,7 +820,7 @@ button:focus-visible {
 
 .dates-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -705,6 +833,54 @@ button:focus-visible {
   display: block;
   margin-top: 8px;
   font-size: 1.22rem;
+}
+
+.dates-grid small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.faq-section {
+  max-width: none;
+  background: #f3f8f7;
+}
+
+.faq-section > * {
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-list details {
+  padding: 0 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.faq-list summary {
+  padding: 18px 34px 18px 0;
+  cursor: pointer;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.faq-list details[open] summary {
+  color: var(--teal-dark);
+}
+
+.faq-list p {
+  max-width: 920px;
+  margin: -2px 0 20px;
+  color: var(--muted);
 }
 
 .people-group + .people-group {
@@ -923,6 +1099,10 @@ button:focus-visible {
   .dates-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .submission-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 760px) {
@@ -966,8 +1146,10 @@ button:focus-visible {
   .anchor-grid,
   .resource-router,
   .speaker-grid,
-  .organizer-grid,
-  .dates-grid,
+    .organizer-grid,
+    .submission-grid,
+    .policy-grid,
+    .dates-grid,
   .media-grid,
   .challenge-list {
     grid-template-columns: 1fr;
@@ -1007,5 +1189,10 @@ button:focus-visible {
 
   .artifact-panel {
     padding: 26px;
+  }
+
+  .submission-alert {
+    align-items: stretch;
+    flex-direction: column;
   }
 }

@@ -37,7 +37,7 @@ assets/
 
 ## Important Dates
 
-- Submissions open: September 1, 2026 at 12:00 UTC
+- Submissions open: August 15, 2026 at 12:00 UTC
 - Submission deadline: October 12, 2026 at 11:59 UTC (October 11, 2026 at 23:59 AoE)
 - Author notification: October 26, 2026
 - Final version and poster confirmation: November 2, 2026

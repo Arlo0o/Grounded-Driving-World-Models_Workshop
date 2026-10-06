@@ -38,11 +38,20 @@ assets/
 ## Important Dates
 
 - Submissions open: August 15, 2026 at 12:00 UTC
-- Submission deadline: October 12, 2026 at 11:59 UTC (October 11, 2026 at 23:59 AoE)
-- Author notification: October 26, 2026
-- Final version and poster confirmation: November 2, 2026
-- Spotlight materials: November 6, 2026
+- Submission deadline: October 22, 2026 at 23:59 AoE (October 23 at 11:59 UTC; October 23 at 19:59 China Standard Time)
+- Review completion and author notification: November 5, 2026
+- Final version and poster confirmation: November 9, 2026
+- Spotlight materials: November 9, 2026
 - Workshop: November 12, 2026 at JW Marriott Austin
+
+## Awards
+
+- Best Paper Award: one award, USD 500 for the winning contribution.
+- Best Novel Idea Award: one award, USD 500 for the winning contribution.
+- Total award budget: USD 1,000. Awards are announced at the workshop.
+- Best Paper is selected from accepted contributions using double-blind reviewer scores, written assessments, and committee deliberation with conflict-of-interest recusal.
+- Best Novel Idea recognizes novel questions, methods or evaluation ideas, clear reasoning and research potential. Both awards automatically consider accepted 2–4 page contributions; no separate application, video, runnable demo or additional award material is required. Recognize two different contributions.
+- Award selection is distinct from acceptance and spotlight selection. Do not publish committee identities or change the author's PDF-release choice.
 
 ## Resource Links Used By The Site
 
@@ -54,6 +63,6 @@ assets/
 ## Release Notes
 
 - The site is published from `main` with GitHub Pages.
-- Submission details are synchronized with the OpenReview venue configuration.
+- On October 6, OpenReview's saved submission invitation was verified with the October 22 AoE cutoff, and the venue home displayed awards and the November 5 review/notification plan. The actual Review Stage deadline and decision-notification sending remain later workflow actions, not scheduled by Revision. The user approved this website release, including the November 9 final-material date.
 - The workshop is non-archival: accepted papers are not published in CoRL or PMLR proceedings.
 - All accepted contributions receive poster presentations; selected contributions may be invited for spotlights.

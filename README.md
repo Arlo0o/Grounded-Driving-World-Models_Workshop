@@ -52,6 +52,7 @@ assets/
 - Best Paper is selected from accepted contributions using double-blind reviewer scores, written assessments, and committee deliberation with conflict-of-interest recusal.
 - Best Novel Idea recognizes novel questions, methods or evaluation ideas, clear reasoning and research potential. Both awards automatically consider accepted 2–4 page contributions; no separate application, video, runnable demo or additional award material is required. Recognize two different contributions.
 - Award selection is distinct from acceptance and spotlight selection. Do not publish committee identities or change the author's PDF-release choice.
+- GWM (Great Wall Motor) is acknowledged within Workshop awards, with the user-requested logo and a link to its official website. This is workshop-award sponsorship, not CoRL conference-level sponsorship. The logo is reused unchanged from the project's existing `GWM_Sponsorship_Proposal/assets/gwm-logo.png`.
 
 ## Resource Links Used By The Site
 

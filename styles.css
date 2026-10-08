@@ -296,6 +296,45 @@ button:focus-visible {
   font-size: 0.94rem;
 }
 
+.award-sponsor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px 32px;
+  margin-top: 24px;
+  padding: 28px;
+  border: 1px solid #dfd5b9;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.award-sponsor-logo {
+  display: block;
+  flex: 0 1 220px;
+  max-width: 100%;
+}
+
+.award-sponsor-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.award-sponsor > div {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.award-sponsor h3 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+}
+
+.award-sponsor h3 + p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .button {
   display: inline-flex;
   align-items: center;

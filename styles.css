@@ -407,22 +407,6 @@ button:focus-visible {
   font-size: 1.08rem;
 }
 
-.acceptance-counts {
-  display: flex;
-  flex-shrink: 0;
-  gap: 22px;
-  padding: 10px 0;
-  color: var(--muted);
-  font-size: 0.8rem;
-}
-
-.acceptance-counts strong {
-  display: block;
-  color: var(--teal-dark);
-  font-size: 2.5rem;
-  line-height: 1.2;
-}
-
 .selected-note,
 .publication-note {
   color: var(--muted);

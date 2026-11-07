@@ -443,10 +443,6 @@ button:focus-visible {
   scroll-margin-top: 115px;
 }
 
-.selected-work:last-child:nth-child(odd) {
-  grid-column: 1 / -1;
-}
-
 .work-topline {
   display: flex;
   justify-content: space-between;
@@ -519,13 +515,8 @@ button:focus-visible {
   text-underline-offset: 3px;
 }
 
-.selected-work:last-child:nth-child(odd) .work-figure-link {
-  height: 310px;
-}
-
 @media (max-width: 760px) {
-  .work-figure-link,
-  .selected-work:last-child:nth-child(odd) .work-figure-link {
+  .work-figure-link {
     height: 225px;
     padding: 6px;
   }

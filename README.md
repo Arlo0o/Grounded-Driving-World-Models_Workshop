@@ -63,6 +63,9 @@ assets/
 
 ## Release Notes
 
+- November 7, 2026: published the accepted-contribution listing after a fresh, read-only check of the OpenReview PC submission table: 7 Spotlight + Poster and 12 Poster contributions. Selected Works includes papers 4, 6, 10, 11, 16, 17, and 21; the Spotlight category is independent of the on-site talk schedule. Titles, author spellings, and order follow workshop submission records.
+- Selected Works and Accepted Posters list metadata and forum links, not private PDFs or review content. The public OpenLongTail project page and the Physics-Grounded Benchmark / PlanContext arXiv pages were verified separately; public versions can differ from workshop submissions. No paper figures are republished in this release because figure-reuse permission was not established. Add author-approved figures with source attribution when available; do not extract them from private submissions.
+
 - The site is published from `main` with GitHub Pages.
 - On October 6, OpenReview's saved submission invitation was verified with the October 22 AoE cutoff, and the venue home displayed awards and the November 5 review/notification plan. The actual Review Stage deadline and decision-notification sending remain later workflow actions, not scheduled by Revision. The user approved this website release, including the November 9 final-material date.
 - The workshop is non-archival: accepted papers are not published in CoRL or PMLR proceedings.

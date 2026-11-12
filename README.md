@@ -42,7 +42,7 @@ assets/
 - Review completion and author notification: November 5, 2026
 - Final version and poster confirmation: November 9, 2026
 - Spotlight materials: November 9, 2026
-- Workshop: November 12, 2026 at JW Marriott Austin
+- Workshop: November 12, 2026 at Hilton Austin, Room 410 (talks and posters).
 
 ## Awards
 

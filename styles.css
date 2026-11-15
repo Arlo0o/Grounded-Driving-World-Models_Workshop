@@ -17,6 +17,27 @@
   box-sizing: border-box;
 }
 
+.talk-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  gap: 1.5rem 3rem;
+}
+.talk-entry {
+  border-top: 1px solid var(--line);
+  padding-block: 1rem;
+  scroll-margin-top: 5rem;
+}
+.talk-entry h3, .talk-roadmap h3 {
+  margin: .25rem 0 .5rem;
+  line-height: 1.25;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+.talk-byline { color: var(--teal-dark); font-weight: 700; }
+.talk-roadmap { margin: 2rem 0 0; }
+.talk-roadmap figcaption { max-width: 52rem; }
+.talk-roadmap img { width: 100%; height: auto; margin: 1rem 0; }
+.program-link { text-decoration: underline; }
+
 html {
   scroll-behavior: smooth;
 }
